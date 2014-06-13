@@ -1,0 +1,60 @@
+<div class="page-header">
+  <h1>Edit Quarter #<%= @quarter.id %></h1>
+</div>
+
+<% if @quarter.errors.any? %>
+  <% @quarter.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<form action="/update_quarter/<%= @quarter.id %>" class="form-horizontal">
+  <!-- Label and input for term -->
+  <div class="form-group">
+    <label for="term" class="col-sm-2 control-label">
+      Term
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="term" name="term" placeholder="Term" class="form-control" value="<%= @quarter.term %>">
+    </div>
+  </div>
+
+  <!-- Label and input for academic_year -->
+  <div class="form-group">
+    <label for="academic_year" class="col-sm-2 control-label">
+      Academic year
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="academic_year" name="academic_year" placeholder="Academic year" class="form-control" value="<%= @quarter.academic_year %>">
+    </div>
+  </div>
+
+  <!-- Label and input for start_date -->
+  <div class="form-group">
+    <label for="start_date" class="col-sm-2 control-label">
+      Start date
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="start_date" name="start_date" placeholder="Start date" class="form-control" value="<%= @quarter.start_date %>">
+    </div>
+  </div>
+
+  <!-- Label and input for end_date -->
+  <div class="form-group">
+    <label for="end_date" class="col-sm-2 control-label">
+      End date
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="end_date" name="end_date" placeholder="End date" class="form-control" value="<%= @quarter.end_date %>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" value="Update Quarter" class="btn btn-primary">
+    </div>
+  </div>
+</form>

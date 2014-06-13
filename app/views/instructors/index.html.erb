@@ -1,0 +1,54 @@
+<div class="page-header">
+  <h1>Instructors</h1>
+</div>
+
+<p><a href="/instructors/new" class="btn btn-primary">Add a New Instructor</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>School userid</th>
+      <th>School username</th>
+      <th>School email</th>
+      <th>Avatar url</th>
+      <th>School dept</th>
+      <th>School bio url</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @instructors.each do |instructor| %>
+      <tr>
+        <td><%= instructor.first_name %></td>
+        <td><%= instructor.last_name %></td>
+        <td><%= instructor.school_userid %></td>
+        <td><%= instructor.school_username %></td>
+        <td><%= instructor.school_email %></td>
+        <td><%= instructor.avatar_url %></td>
+        <td><%= instructor.school_dept %></td>
+        <td><%= instructor.school_bio_url %></td>
+        <td>
+          <a href="/instructors/<%= instructor.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/instructors/<%= instructor.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_instructor/<%= instructor.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

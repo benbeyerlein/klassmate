@@ -1,0 +1,40 @@
+<div class="page-header">
+  <h1>Edit Instructor Course Schedule #<%= @instructor_course_schedule.id %></h1>
+</div>
+
+<% if @instructor_course_schedule.errors.any? %>
+  <% @instructor_course_schedule.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<form action="/update_instructor_course_schedule/<%= @instructor_course_schedule.id %>" class="form-horizontal">
+  <!-- Label and input for instructor_id -->
+  <div class="form-group">
+    <label for="instructor_id" class="col-sm-2 control-label">
+      Instructor
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="instructor_id" name="instructor_id" placeholder="Instructor" class="form-control" value="<%= @instructor_course_schedule.instructor_id %>">
+    </div>
+  </div>
+
+  <!-- Label and input for course_schedule_id -->
+  <div class="form-group">
+    <label for="course_schedule_id" class="col-sm-2 control-label">
+      Course schedule
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="course_schedule_id" name="course_schedule_id" placeholder="Course schedule" class="form-control" value="<%= @instructor_course_schedule.course_schedule_id %>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" value="Update Instructor Course Schedule" class="btn btn-primary">
+    </div>
+  </div>
+</form>

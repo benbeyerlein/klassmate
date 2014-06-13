@@ -1,0 +1,42 @@
+<div class="page-header">
+  <h1>Student course schedules</h1>
+</div>
+
+<p><a href="/student_course_schedules/new" class="btn btn-primary">Add a New Student Course Schedule</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Student</th>
+      <th>Course schedule</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student_course_schedules.each do |student_course_schedule| %>
+      <tr>
+        <td><%= student_course_schedule.student_id %></td>
+        <td><%= student_course_schedule.course_schedule_id %></td>
+        <td>
+          <a href="/student_course_schedules/<%= student_course_schedule.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/student_course_schedules/<%= student_course_schedule.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_student_course_schedule/<%= student_course_schedule.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

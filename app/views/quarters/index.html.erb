@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Quarters</h1>
+</div>
+
+<p><a href="/quarters/new" class="btn btn-primary">Add a New Quarter</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Academic year</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quarters.each do |quarter| %>
+      <tr>
+        <td><%= quarter.term %></td>
+        <td><%= quarter.academic_year %></td>
+        <td><%= quarter.start_date %></td>
+        <td><%= quarter.end_date %></td>
+        <td>
+          <a href="/quarters/<%= quarter.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/quarters/<%= quarter.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_quarter/<%= quarter.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

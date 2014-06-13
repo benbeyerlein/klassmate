@@ -1,0 +1,58 @@
+<div class="page-header">
+  <h1>Course schedules</h1>
+</div>
+
+<p><a href="/course_schedules/new" class="btn btn-primary">Add a New Course Schedule</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Quarter</th>
+      <th>Section</th>
+      <th>Instructor</th>
+      <th>Day of week</th>
+      <th>Time of day</th>
+      <th>Campus</th>
+      <th>Location</th>
+      <th>First class date</th>
+      <th>Last class date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_schedules.each do |course_schedule| %>
+      <tr>
+        <td><%= course_schedule.course_id %></td>
+        <td><%= course_schedule.quarter_id %></td>
+        <td><%= course_schedule.section_id %></td>
+        <td><%= course_schedule.instructor_id %></td>
+        <td><%= course_schedule.day_of_week %></td>
+        <td><%= course_schedule.time_of_day %></td>
+        <td><%= course_schedule.campus %></td>
+        <td><%= course_schedule.location %></td>
+        <td><%= course_schedule.first_class_date %></td>
+        <td><%= course_schedule.last_class_date %></td>
+        <td>
+          <a href="/course_schedules/<%= course_schedule.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/course_schedules/<%= course_schedule.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_course_schedule/<%= course_schedule.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

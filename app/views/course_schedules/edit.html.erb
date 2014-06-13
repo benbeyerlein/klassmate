@@ -1,0 +1,120 @@
+<div class="page-header">
+  <h1>Edit Course Schedule #<%= @course_schedule.id %></h1>
+</div>
+
+<% if @course_schedule.errors.any? %>
+  <% @course_schedule.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<form action="/update_course_schedule/<%= @course_schedule.id %>" class="form-horizontal">
+  <!-- Label and input for course_id -->
+  <div class="form-group">
+    <label for="course_id" class="col-sm-2 control-label">
+      Course
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="course_id" name="course_id" placeholder="Course" class="form-control" value="<%= @course_schedule.course_id %>">
+    </div>
+  </div>
+
+  <!-- Label and input for quarter_id -->
+  <div class="form-group">
+    <label for="quarter_id" class="col-sm-2 control-label">
+      Quarter
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="quarter_id" name="quarter_id" placeholder="Quarter" class="form-control" value="<%= @course_schedule.quarter_id %>">
+    </div>
+  </div>
+
+  <!-- Label and input for section_id -->
+  <div class="form-group">
+    <label for="section_id" class="col-sm-2 control-label">
+      Section
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="section_id" name="section_id" placeholder="Section" class="form-control" value="<%= @course_schedule.section_id %>">
+    </div>
+  </div>
+
+  <!-- Label and input for instructor_id -->
+  <div class="form-group">
+    <label for="instructor_id" class="col-sm-2 control-label">
+      Instructor
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="instructor_id" name="instructor_id" placeholder="Instructor" class="form-control" value="<%= @course_schedule.instructor_id %>">
+    </div>
+  </div>
+
+  <!-- Label and input for day_of_week -->
+  <div class="form-group">
+    <label for="day_of_week" class="col-sm-2 control-label">
+      Day of week
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="day_of_week" name="day_of_week" placeholder="Day of week" class="form-control" value="<%= @course_schedule.day_of_week %>">
+    </div>
+  </div>
+
+  <!-- Label and input for time_of_day -->
+  <div class="form-group">
+    <label for="time_of_day" class="col-sm-2 control-label">
+      Time of day
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="time_of_day" name="time_of_day" placeholder="Time of day" class="form-control" value="<%= @course_schedule.time_of_day %>">
+    </div>
+  </div>
+
+  <!-- Label and input for campus -->
+  <div class="form-group">
+    <label for="campus" class="col-sm-2 control-label">
+      Campus
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="campus" name="campus" placeholder="Campus" class="form-control" value="<%= @course_schedule.campus %>">
+    </div>
+  </div>
+
+  <!-- Label and input for location -->
+  <div class="form-group">
+    <label for="location" class="col-sm-2 control-label">
+      Location
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="location" name="location" placeholder="Location" class="form-control" value="<%= @course_schedule.location %>">
+    </div>
+  </div>
+
+  <!-- Label and input for first_class_date -->
+  <div class="form-group">
+    <label for="first_class_date" class="col-sm-2 control-label">
+      First class date
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="first_class_date" name="first_class_date" placeholder="First class date" class="form-control" value="<%= @course_schedule.first_class_date %>">
+    </div>
+  </div>
+
+  <!-- Label and input for last_class_date -->
+  <div class="form-group">
+    <label for="last_class_date" class="col-sm-2 control-label">
+      Last class date
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="last_class_date" name="last_class_date" placeholder="Last class date" class="form-control" value="<%= @course_schedule.last_class_date %>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" value="Update Course Schedule" class="btn btn-primary">
+    </div>
+  </div>
+</form>

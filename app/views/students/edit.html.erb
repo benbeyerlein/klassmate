@@ -1,0 +1,80 @@
+<div class="page-header">
+  <h1>Edit Student #<%= @student.id %></h1>
+</div>
+
+<% if @student.errors.any? %>
+  <% @student.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<form action="/update_student/<%= @student.id %>" class="form-horizontal">
+  <!-- Label and input for first_name -->
+  <div class="form-group">
+    <label for="first_name" class="col-sm-2 control-label">
+      First name
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="first_name" name="first_name" placeholder="First name" class="form-control" value="<%= @student.first_name %>">
+    </div>
+  </div>
+
+  <!-- Label and input for last_name -->
+  <div class="form-group">
+    <label for="last_name" class="col-sm-2 control-label">
+      Last name
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="last_name" name="last_name" placeholder="Last name" class="form-control" value="<%= @student.last_name %>">
+    </div>
+  </div>
+
+  <!-- Label and input for school_userid -->
+  <div class="form-group">
+    <label for="school_userid" class="col-sm-2 control-label">
+      School userid
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="school_userid" name="school_userid" placeholder="School userid" class="form-control" value="<%= @student.school_userid %>">
+    </div>
+  </div>
+
+  <!-- Label and input for school_username -->
+  <div class="form-group">
+    <label for="school_username" class="col-sm-2 control-label">
+      School username
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="school_username" name="school_username" placeholder="School username" class="form-control" value="<%= @student.school_username %>">
+    </div>
+  </div>
+
+  <!-- Label and input for school_email -->
+  <div class="form-group">
+    <label for="school_email" class="col-sm-2 control-label">
+      School email
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="school_email" name="school_email" placeholder="School email" class="form-control" value="<%= @student.school_email %>">
+    </div>
+  </div>
+
+  <!-- Label and input for avatar_url -->
+  <div class="form-group">
+    <label for="avatar_url" class="col-sm-2 control-label">
+      Avatar url
+    </label>
+    <div class="col-sm-10">
+      <input type="text" id="avatar_url" name="avatar_url" placeholder="Avatar url" class="form-control" value="<%= @student.avatar_url %>">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" value="Update Student" class="btn btn-primary">
+    </div>
+  </div>
+</form>

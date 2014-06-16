@@ -19,6 +19,7 @@ class StudentsController < ApplicationController
     @student.school_username = params[:school_username]
     @student.school_email = params[:school_email]
     @student.avatar_url = params[:avatar_url]
+    @student.profile_url = params[:profile_url]
 
     if @student.save
       redirect_to "/students", :notice => "Student created successfully."
@@ -40,6 +41,7 @@ class StudentsController < ApplicationController
     @student.school_username = params[:school_username]
     @student.school_email = params[:school_email]
     @student.avatar_url = params[:avatar_url]
+    @student.profile_url = params[:profile_url]
 
     if @student.save
       redirect_to "/students", :notice => "Student updated successfully."

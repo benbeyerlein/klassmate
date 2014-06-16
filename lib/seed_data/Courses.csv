@@ -1,6 +1,8 @@
 school_course_id,title,status,effective_start_quarter_id,effective_end_quarter_id,school_url,credits
 ACCT-430-0,Accounting For Decision Making,Active,1,,,1
 ACCT-431-0,Managerial Accounting,Active,1,,,1
+ACCT-438-B,Accounting for Decision Making,Active,1,,,0.5
+ACCT-440-0,MMM Accounting for Decision Making,Active,1,,,1
 ACCT-451-0,Financial Reporting and Analysis,Active,1,,,1
 ACCT-499-0,Independent Study,Active,1,,,0.99
 ACCT-520-4,Seminar on Agency Theory and Information Economics,Active,1,,,1
@@ -10,9 +12,13 @@ BLAW-437-0,Issues In Antitrust,Active,1,,,1
 BLAW-911-A,Business Law for Entrepreneurs,Active,1,,,0.5
 DECS-430-B,Business Analytics I,Active,1,,,0.5
 DECS-431-0,Business Analytics II,Active,1,,,1
+DECS-438-A,Managerial Decision Analysis,Active,1,,,0.5
+DECS-439-B,Statistical Decision Analysis,Active,1,,,0.5
+DECS-440-0,MMM Business Analytics,Active,1,,,1
 DECS-452-0,Game Theory and Strategic Decisions (formerly Strategic Decision Making),Active,1,,,1
 DECS-915-0,Analytical Consulting Lab (ACL),Active,1,,,1
 FINC-430-0,Finance I,Active,1,,,1
+FINC-440-0,Finance I/II,Active,1,,,1
 FINC-441-0,Finance II,Active,1,,,1
 FINC-442-0,Financial Decisions,Active,1,,,1
 FINC-444-0,Value Investing (formerly FINC-925 Advanced Topics in Finance),Active,1,,,1
@@ -112,6 +118,7 @@ MGMT-941-0,Issues in Air Transportation,Active,1,,,1
 MGMT-950-0,Competitive Strategy in Financial Markets,Active,1,,,1
 MGMT-955-A,Strategies for Growth,Active,1,,,0.5
 MKTG-430-0,Marketing Management,Active,1,,,1
+MKTG-440-0,MMM Marketing Management,Active,1,,,1
 MKTG-450-0,Research Methods In Marketing,Active,1,,,1
 MKTG-451-0,Marketing Channel Strategies,Active,1,,,1
 MKTG-453-0,Business Marketing,Active,1,,,1
@@ -119,6 +126,7 @@ MKTG-454-0,Advertising Strategy,Active,1,,,1
 MKTG-455-0,Media and Integrated Marketing (formerly MEDM-431),Active,1,,,1
 MKTG-458-0,Consumer Insight for Brand Strategy,Active,1,,,1
 MKTG-465-0,Marketing-Led Innovation,Active,1,,,1
+MKTG-465-0,Launching New Products and Services,Active,1,,,1
 MKTG-466-0,Marketing Strategy,Active,1,,,1
 MKTG-499-0,Independent Study,Active,1,,,0.99
 MKTG-499-B,Independent Study,Active,1,,,0.5
@@ -126,6 +134,7 @@ MKTG-530-1,Special Topics in Marketing: Problems and Solutions in Applied Data A
 MKTG-550-0,Marketing Models: Analytic Modeling (formerly MKTG-520-7),Active,1,,,1
 MKTG-552-0,Marketing Models: Multivariate Statistics (formerly MKTG-520-5),Active,1,,,1
 MKTG-940-0,C Suite and Boardroom Dynamics,Active,1,,,1
+MKTG-950-0,Marketing Project Laboratory Course: Generating Profitable Growth,Active,1,,,1
 MKTG-953-0,Customer Analytics,Active,1,,,1
 MKTG-957-0,Digital Marketing and Commerce,Active,1,,,1
 MKTG-961-A,Entrepreneurial Tools for Digital Marketing,Active,1,,,0.5
@@ -134,6 +143,7 @@ MORS-426-1,Micro-Organizational Research Methods,Active,1,,,1
 MORS-430-0,Leadership in Organizations,Active,1,,,1
 MORS-449-A,Writing in Organizations,Active,1,,,0.5
 MORS-450-0,Management Communications,Active,1,,,1
+MORS-452-0,Leading the Strategic Change Process,Active,1,,,1
 MORS-453-0,"Power In Organizations: Sources, Strategies and Skills",Active,1,,,1
 MORS-455-0,Strategy Implementation,Active,1,,,1
 MORS-460-0,Leading and Managing Teams,Active,1,,,1
@@ -144,12 +154,14 @@ MORS-499-0,Independent Study,Active,1,,,0.99
 MORS-531-0,Organizational Behavior: Social Movements,Active,1,,,1
 MORS-935-C,Personal Leadership Insights (Open to 2nd years and 1Ys),Active,1,,,0.5
 MORS-935-C,Personal Leadership Insights (Open to 1st years only),Active,1,,,0.5
+MORS-937-0,Leader as Coach (Part Time Version),Active,1,,,1
 MORS-937-C,Leader as Coach: Practicum,Active,1,,,0.5
 MORS-941-0,Comprehensive Perspectives of Leading a Sports Entity,Active,1,,,1
 MORS-945-0,Social Dynamics and Network Analytics,Active,1,,,1
 MORS-952-A,"Entrepreneurship: Building Innovation, Teams, and Cultures",Active,1,,,0.5
 MORS-952-B,"Entrepreneurship: Building Innovation, Teams, and Cultures",Active,1,,,0.5
 OPNS-430-0,Operations Management,Active,1,,,1
+OPNS-438-B,Operations Management (Turbo),Active,1,,,0.5
 OPNS-450-0,Analytical Decision Modeling,Active,1,,,1
 OPNS-454-0,Operations Strategy,Active,1,,,1
 OPNS-455-0,Supply Chain Management,Active,1,,,1

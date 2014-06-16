@@ -37,6 +37,7 @@ CourseSchedule.delete_all
 CSV.foreach("#{Rails.root}/lib/seed_data/CourseSchedule.csv", :headers => :first_row) do |row|
     if row[0] != nil
 
+      puts "*****FOR COURSE:  #{row}*****"
 
       #error handling if cannot locate match
       course_exists = Course.where(:school_course_id => row[0]).first
@@ -70,21 +71,49 @@ CSV.foreach("#{Rails.root}/lib/seed_data/CourseSchedule.csv", :headers => :first
       end
 
       #now that we have quarter, find the first and last date of the class
-      dow_offset = {:Mon => 0, :Tue => 1, :Wed => 2, :Thu => 3, :Fri => 4, :Sat => 5, :Sun => 6}
-      puts dow_offset
-
-      #first class after quarter start date and DOW
-
       if course_exists != nil && quarter_exists != nil
 
-        first_class_date = quarter_exists.start_date + dow_offset[row[4][0..2].to_sym]
+        #first class after quarter start date and DOW
+        start_dow = quarter_exists.start_date.strftime('%a')
+        dow_offset = 0
+        first_class_date = quarter_exists.start_date
+        until row[4][0..2] == start_dow
+           first_class_date = quarter_exists.start_date + dow_offset
+           dow_offset +=1;
+           start_dow = first_class_date.strftime('%a')
+           if dow_offset >= 7
+             break
+           end
+        end
 
-        last_class_date = quarter_exists.end_date + dow_offset[row[4][4..7].to_sym] - 7
+        # puts "quarter start: #{quarter_exists.start_date}, #{quarter_exists.start_date.strftime('%a')}"
+        # puts "course start: #{first_class_date}, #{first_class_date.strftime('%a')}, offset #{dow_offset-1}"
+        # puts ""
+
+        #last class before quarter end date and DOW
+        end_dow = quarter_exists.end_date.strftime('%a')
+        dow_offset = 0
+        last_class_date = quarter_exists.end_date
+        until row[4].reverse[0..2].reverse == end_dow
+           last_class_date = quarter_exists.end_date + dow_offset
+           dow_offset -=1;
+           end_dow = last_class_date.strftime('%a')
+           if dow_offset <= -7
+             break
+           end
+           #puts "dow_offset for last date: #{dow_offset}"
+        end
+
+        # puts "quarter end: #{quarter_exists.end_date}, #{quarter_exists.end_date.strftime('%a')}"
+        # puts "course end: #{last_class_date}, #{last_class_date.strftime('%a')}, offset #{dow_offset+1}"
+        # puts ""
+
+# sleep 3
 
       end
 
 
-      #last class before quarter end date and DOW
+
 
 
       #CourseSchedule.create!(:first_name => row[0], :last_name => row[1], :school_userid => row[2], :school_username => row[3], :school_email => row[4], :profile_url => row[5], :avatar_url => row[6])

@@ -71,21 +71,21 @@ Rails.application.routes.draw do
   get('/delete_student/:id', { :controller => 'students', :action => 'destroy' })
   #------------------------------
 
-  # Routes for the Class resource:
+  # Routes for the Klass resource:
   # CREATE
-  get('/classes/new', { :controller => 'classes', :action => 'new' })
-  get('/create_class', { :controller => 'classes', :action => 'create' })
+  get('/classes/new', { :controller => 'klasses', :action => 'new' })
+  get('/create_class', { :controller => 'klasses', :action => 'create' })
 
   # READ
-  get('/classes', { :controller => 'classes', :action => 'index' })
-  get('/classes/:id', { :controller => 'classes', :action => 'show' })
+  get('/classes', { :controller => 'klasses', :action => 'index' })
+  get('/classes/:id', { :controller => 'klasses', :action => 'show' })
 
   # UPDATE
-  get('/classes/:id/edit', { :controller => 'classes', :action => 'edit' })
-  get('/update_class/:id', { :controller => 'classes', :action => 'update' })
+  get('/classes/:id/edit', { :controller => 'klasses', :action => 'edit' })
+  get('/update_class/:id', { :controller => 'klasses', :action => 'update' })
 
   # DELETE
-  get('/delete_class/:id', { :controller => 'classes', :action => 'destroy' })
+  get('/delete_class/:id', { :controller => 'klasses', :action => 'destroy' })
   #------------------------------
 
   # Routes for the Course_schedule resource:

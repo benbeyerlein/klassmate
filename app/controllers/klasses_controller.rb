@@ -1,4 +1,4 @@
-Klass KlassesController < ApplicationController
+class KlassesController < ApplicationController
   def index
     @klasses = Klass.all
   end
@@ -18,7 +18,7 @@ Klass KlassesController < ApplicationController
     @klass.day_of_week = params[:day_of_week]
 
     if @klass.save
-      redirect_to "/Classes", :notice => "Class created successfully."
+      redirect_to "/classes", :notice => "Class created successfully."
     else
       render 'new'
     end
@@ -36,7 +36,7 @@ Klass KlassesController < ApplicationController
     @klass.day_of_week = params[:day_of_week]
 
     if @klass.save
-      redirect_to "/Classes", :notice => "Class updated successfully."
+      redirect_to "/classes", :notice => "Class updated successfully."
     else
       render 'edit'
     end
@@ -47,6 +47,6 @@ Klass KlassesController < ApplicationController
 
     @klass.destroy
 
-    redirect_to "/Classes", :notice => "Class deleted."
+    redirect_to "/classes", :notice => "Class deleted."
   end
 end

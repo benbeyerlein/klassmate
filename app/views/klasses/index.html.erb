@@ -17,23 +17,23 @@
   </thead>
 
   <tbody>
-    <% @klasses.each do |class| %>
+    <% @klasses.each do |klass| %>
       <tr>
-        <td><%= class.course_schedule_id %></td>
-        <td><%= class.class_datetime %></td>
-        <td><%= class.day_of_week %></td>
+        <td><%= klass.course_schedule_id %></td>
+        <td><%= klass.class_datetime %></td>
+        <td><%= klass.day_of_week %></td>
         <td>
-          <a href="/classes/<%= class.id %>" class="btn btn-primary">
+          <a href="/classes/<%= klass.id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
           </a>
         </td>
         <td>
-          <a href="/classes/<%= class.id %>/edit" class="btn btn-warning">
+          <a href="/classes/<%= klass.id %>/edit" class="btn btn-warning">
             <i class="fa fa-edit"></i>
           </a>
         </td>
         <td>
-          <a href="/delete_class/<%= class.id %>" class="btn btn-danger">
+          <a href="/delete_class/<%= klass.id %>" class="btn btn-danger">
             <i class="fa fa-trash-o"></i>
           </a>
         </td>

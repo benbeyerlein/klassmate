@@ -112,11 +112,7 @@ CSV.foreach("#{Rails.root}/lib/seed_data/CourseSchedule.csv", :headers => :first
 
       end
 
-
-
-
-
-      #CourseSchedule.create!(:first_name => row[0], :last_name => row[1], :school_userid => row[2], :school_username => row[3], :school_email => row[4], :profile_url => row[5], :avatar_url => row[6])
+      CourseSchedule.create!(:course_id => course_id, :quarter_id => quarter_id, :section_id => row[2], :instructor_id => instructor_id, :day_of_week => row[4], :time_of_day => row[5], :campus => row[6], :location => row[7], :first_class_date => first_class_date, :last_class_date => last_class_date)
     end
     #puts "CourseSchedule model seeded"
 end

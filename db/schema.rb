@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140616023332) do
-
-  create_table "classes", force: true do |t|
-    t.integer  "course_schedule_id"
-    t.datetime "class_datetime"
-    t.string   "day_of_week"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140616025630) do
 
   create_table "course_schedules", force: true do |t|
     t.integer  "course_id"
@@ -64,6 +56,14 @@ ActiveRecord::Schema.define(version: 20140616023332) do
     t.string   "avatar_url"
     t.string   "school_dept"
     t.string   "school_bio_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "klasses", force: true do |t|
+    t.integer  "course_schedule_id"
+    t.datetime "class_datetime"
+    t.string   "day_of_week"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

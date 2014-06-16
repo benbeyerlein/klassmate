@@ -1,9 +1,9 @@
 <div class="page-header">
-  <h1>Edit Class #<%= @class.id %></h1>
+  <h1>Add Class</h1>
 </div>
 
-<% if @class.errors.any? %>
-  <% @class.errors.full_messages.each do |message| %>
+<% if @klass.errors.any? %>
+  <% @klass.errors.full_messages.each do |message| %>
     <div class="alert alert-dismissable alert-danger">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <%= message %>
@@ -11,14 +11,15 @@
   <% end %>
 <% end %>
 
-<form action="/update_class/<%= @class.id %>" class="form-horizontal">
+
+<form action="/create_class" class="form-horizontal">
   <!-- Label and input for course_schedule_id -->
   <div class="form-group">
     <label for="course_schedule_id" class="col-sm-2 control-label">
       Course schedule
     </label>
     <div class="col-sm-10">
-      <input type="text" id="course_schedule_id" name="course_schedule_id" placeholder="Course schedule" class="form-control" value="<%= @class.course_schedule_id %>">
+      <input type="text" id="course_schedule_id" name="course_schedule_id" placeholder="Course schedule" class="form-control" value="<%= @klass.course_schedule_id %>">
     </div>
   </div>
 
@@ -28,7 +29,7 @@
       Class datetime
     </label>
     <div class="col-sm-10">
-      <input type="text" id="class_datetime" name="class_datetime" placeholder="Class datetime" class="form-control" value="<%= @class.class_datetime %>">
+      <input type="text" id="class_datetime" name="class_datetime" placeholder="Class datetime" class="form-control" value="<%= @klass.class_datetime %>">
     </div>
   </div>
 
@@ -38,13 +39,13 @@
       Day of week
     </label>
     <div class="col-sm-10">
-      <input type="text" id="day_of_week" name="day_of_week" placeholder="Day of week" class="form-control" value="<%= @class.day_of_week %>">
+      <input type="text" id="day_of_week" name="day_of_week" placeholder="Day of week" class="form-control" value="<%= @klass.day_of_week %>">
     </div>
   </div>
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <input type="submit" value="Update Class" class="btn btn-primary">
+      <input type="submit" value="Create Class" class="btn btn-primary">
     </div>
   </div>
 </form>

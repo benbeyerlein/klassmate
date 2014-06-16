@@ -39,10 +39,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 # Simplify building tables
-# gem 'ez'
+gem 'ez'
 
 # Simplify RCAV
 gem 'starter_generators', :git => "git://github.com/rbetina/starter_generators.git", :branch => "kiei925"
 
 # Authentication
 gem 'devise'
+
+# gem 'fastercsv'

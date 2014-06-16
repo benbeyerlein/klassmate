@@ -1,0 +1,163 @@
+school_course_id,title,status,effective_start_quarter_id,effective_end_quarter_id,school_url,credits
+ACCT-430-0,Accounting For Decision Making,Active,1,,,1
+ACCT-431-0,Managerial Accounting,Active,1,,,1
+ACCT-451-0,Financial Reporting and Analysis,Active,1,,,1
+ACCT-499-0,Independent Study,Active,1,,,0.99
+ACCT-520-4,Seminar on Agency Theory and Information Economics,Active,1,,,1
+ACCT-520-6,Seminar on Institutional Factors Relevant to Empirical Accounting Research,Active,1,,,1
+BLAW-435-0,Business Law I,Active,1,,,1
+BLAW-437-0,Issues In Antitrust,Active,1,,,1
+BLAW-911-A,Business Law for Entrepreneurs,Active,1,,,0.5
+DECS-430-B,Business Analytics I,Active,1,,,0.5
+DECS-431-0,Business Analytics II,Active,1,,,1
+DECS-452-0,Game Theory and Strategic Decisions (formerly Strategic Decision Making),Active,1,,,1
+DECS-915-0,Analytical Consulting Lab (ACL),Active,1,,,1
+FINC-430-0,Finance I,Active,1,,,1
+FINC-441-0,Finance II,Active,1,,,1
+FINC-442-0,Financial Decisions,Active,1,,,1
+FINC-444-0,Value Investing (formerly FINC-925 Advanced Topics in Finance),Active,1,,,1
+FINC-446-0,Entrepreneurial Finance,Active,1,,,1
+FINC-448-0,"M&As, LBOs and Corporate Restructuring",Active,1,,,1
+FINC-454-0,Real Estate Finance and Investments,Active,1,,,1
+FINC-455-A,Real Estate Finance and Investments II,Active,1,,,0.5
+FINC-461-0,Investment Banking,Active,1,,,1
+FINC-463-0,Securities Analysis,Active,1,,,1
+FINC-465-0,Derivatives Markets I,Active,1,,,1
+FINC-470-0,International Finance,Active,1,,,1
+FINC-484-A,Thought Leadership Seminar: Contemporary Issues in Finance,Active,1,,,0.5
+FINC-499-0,Independent Study,Active,1,,,0.99
+FINC-499-A,Independent Study,Active,1,,,0.5
+FINC-499-B,Independent Study,Active,1,,,0.99
+FINC-520-0,Topics in Finance,Active,1,,,1
+FINC-520-1,Seminar In Finance,Active,1,,,1
+FINC-530-0,Special Topics in Finance: Empirical Methods in Finance,Active,1,,,1
+FINC-915-0,Venture Lab (V-Lab),Active,1,,,1
+FINC-916-B,VC Experience,Active,1,,,0.5
+FINC-931-0,"Wall Street, Hedge Funds and Private Equity",Active,1,,,1
+FINC-933-0,Asset Management Practicum I,Active,1,,,1
+FINC-936-0,Asset Management Practicum IV,Active,1,,,1
+FINC-936-C,Asset Management Practicum IV,Active,1,,,0.5
+FINC-937-A,Microfinance & the Role of Financial Institutions in Development,Active,1,,,0.5
+FINC-939-0,Buyout Lab (B-Lab),Active,1,,,1
+FINC-940-A,Financial Modeling for Leveraged Buyout Transactions,Active,1,,,0.5
+FINC-941-0,Macroeconomic Policy and Global Capital Markets,Active,1,,,1
+FINC-945-0,Global Entrepreneurial Finance,Active,1,,,1
+FINC-970-0,Empirical Methods in Finance,Active,1,,,1
+HEMA-914-0,Biomedical Marketing (formerly BIOT-914-0),Active,1,,,1
+HEMA-921-A,Health Information Technology,Active,1,,,0.5
+HEMA-922-B,Health Care Quality,Active,1,,,0.5
+INTL-490-0,Foreign Study,Active,1,,,0.99
+INTL-499-B,Independent Study,Active,1,,,0.5
+INTL-916-0,International Business Strategy Lab (IBS-Lab),Active,1,,,1
+KIEI-462-0,New Venture Discovery,Active,1,,,1
+KIEI-463-0,Successful Entrepreneurship,Active,1,,,1
+KIEI-499-0,Independent Study,Active,1,,,0.99
+KIEI-499-A,Independent Study,Active,1,,,0.5
+KIEI-902-A,Entrepreneurial Selling,Active,1,,,0.5
+KIEI-903-0,Corporate Innovation and New Ventures,Active,1,,,1
+KIEI-911-0,Commercialization Lab,Active,1,,,1
+KIEI-925-0,Startup Programming and Management,Active,1,,,1
+KIEI-926-0,Venture Capital and Private Equity: The Human Element,Active,1,,,1
+KIEI-931-0,NUVention -- Innovate for Impact II,Active,1,,,1
+KIEI-935-B,Intellectual Property for Entrepreneurs,Active,1,,,0.5
+KIEI-941-0,Enterprise Models for Social Change,Active,1,,,1
+KIEI-942-0,Innovation Lab II,Active,1,,,1
+KIEI-943-A,Social Intrapreneurship,Active,1,,,0.5
+KIEI-952-0,NUvention: Web II,Active,1,,,1
+KIEI-965-0,Global Governance of Private Companies,Active,1,,,1
+KIEI-967-0,The Entrepreneurial Experience,Active,1,,,1
+KPPI-440-A,Leadership and Crisis Management,Active,1,,,0.5
+KPPI-441-0,Strategic Management in Non-Market Environments,Active,1,,,1
+KPPI-454-A,The Education Industry,Active,1,,,0.5
+KPPI-460-0,Values Based Leadership,Active,1,,,1
+KPPI-471-0,Advanced Board Governance,Active,1,,,1
+KPPI-471-C,Advanced Studies in Board Governance ( Half-Credit),Active,1,,,0.5
+KPPI-471-N,Advanced Board Governance (non-credit),Active,1,,,0
+KPPI-480-0,Public Economics for Business Leaders: State and Local Policy,Active,1,,,1
+KPPI-484-0,Thought Leadership Seminar: Sustainable Development,Active,1,,,1
+KPPI-484-0,Thought Leadership Seminar: Infrastructure Strategy - Public Sector Reforms and Private Sector Opportunities,Active,1,,,1
+KPPI-499-0,Independent Study,Active,1,,,0.99
+KPPI-915-A,Business Opportunities in Energy Markets,Active,1,,,0.5
+KPPI-917-B,Corporate Social Innovation,Active,1,,,0.5
+KPPI-918-0,Education Consulting Lab,Active,1,,,1
+KPPI-918-B,Education Consulting Lab (Half Credit),Active,1,,,0.5
+KPPI-973-A,Medical Technologies in Developing Countries II,Active,1,,,0.5
+MECN-430-0,Microeconomic Analysis,Active,1,,,1
+MECN-441-0,Competitive Strategy and Industrial Structure,Active,1,,,1
+MECN-450-0,Macroeconomics,Active,1,,,1
+MECN-499-0,Independent Study,Active,1,,,0.99
+MECS-449-2,"The Economics of Ideas, Innovation, and Entrepreneurship",Active,1,,,1
+MECS-460-3,Foundations of Managerial Economics I: Game Theory,Active,1,,,1
+MECS-462-0,Decision Theory,Active,1,,,1
+MECS-466-0,Social Choice and Voting Models,Active,1,,,1
+MECS-475-0,The Economics of Organizations,Active,1,,,1
+MECS-478-0,Introduction to Applied Econometrics III: Research Design for Causal Inference,Active,1,,,1
+MECS-485-0,Empirical Issues In Business Strategy,Active,1,,,1
+MEDM-499-0,Independent Study,Active,1,,,0.99
+MEDM-914-0,Media Management Strategy Project,Active,1,,,1
+MEDM-915-A,Managing Digital Media,Active,1,,,0.5
+MEDM-916-B,Changing Business Models in the Media Industry,Active,1,,,0.5
+MGMT-431-0,Business Strategy,Active,1,,,1
+MGMT-440-0,Personnel Strategy,Active,1,,,1
+MGMT-441-0,Intellectual Capital Management (formerly TECH-441-0),Active,1,,,1
+MGMT-444-0,Health Economics,Active,1,,,1
+MGMT-452-0,Strategy & Organization,Active,1,,,1
+MGMT-460-0,International Business Strategy,Active,1,,,1
+MGMT-463-0,Technology and Innovation Strategy,Active,1,,,1
+MGMT-466-0,International Business Strategy in Non-Market Environments,Active,1,,,1
+MGMT-469-0,Empirical Methods in Strategy,Active,1,,,1
+MGMT-499-0,Independent Study,Active,1,,,0.99
+MGMT-930-A,Globality,Active,1,,,0.5
+MGMT-941-0,Issues in Air Transportation,Active,1,,,1
+MGMT-950-0,Competitive Strategy in Financial Markets,Active,1,,,1
+MGMT-955-A,Strategies for Growth,Active,1,,,0.5
+MKTG-430-0,Marketing Management,Active,1,,,1
+MKTG-450-0,Research Methods In Marketing,Active,1,,,1
+MKTG-451-0,Marketing Channel Strategies,Active,1,,,1
+MKTG-453-0,Business Marketing,Active,1,,,1
+MKTG-454-0,Advertising Strategy,Active,1,,,1
+MKTG-455-0,Media and Integrated Marketing (formerly MEDM-431),Active,1,,,1
+MKTG-458-0,Consumer Insight for Brand Strategy,Active,1,,,1
+MKTG-465-0,Marketing-Led Innovation,Active,1,,,1
+MKTG-466-0,Marketing Strategy,Active,1,,,1
+MKTG-499-0,Independent Study,Active,1,,,0.99
+MKTG-499-B,Independent Study,Active,1,,,0.5
+MKTG-530-1,Special Topics in Marketing: Problems and Solutions in Applied Data Analysis,Active,1,,,1
+MKTG-550-0,Marketing Models: Analytic Modeling (formerly MKTG-520-7),Active,1,,,1
+MKTG-552-0,Marketing Models: Multivariate Statistics (formerly MKTG-520-5),Active,1,,,1
+MKTG-940-0,C Suite and Boardroom Dynamics,Active,1,,,1
+MKTG-953-0,Customer Analytics,Active,1,,,1
+MKTG-957-0,Digital Marketing and Commerce,Active,1,,,1
+MKTG-961-A,Entrepreneurial Tools for Digital Marketing,Active,1,,,0.5
+MKTG-962-B,Entrepreneurial Selling: Business to Business,Active,1,,,0.5
+MORS-426-1,Micro-Organizational Research Methods,Active,1,,,1
+MORS-430-0,Leadership in Organizations,Active,1,,,1
+MORS-449-A,Writing in Organizations,Active,1,,,0.5
+MORS-450-0,Management Communications,Active,1,,,1
+MORS-453-0,"Power In Organizations: Sources, Strategies and Skills",Active,1,,,1
+MORS-455-0,Strategy Implementation,Active,1,,,1
+MORS-460-0,Leading and Managing Teams,Active,1,,,1
+MORS-468-0,Managerial Leadership (formerly MGMT-468-0),Active,1,,,1
+MORS-470-0,Negotiations,Active,1,,,1
+MORS-474-0,Cross-Cultural Negotiation,Active,1,,,1
+MORS-499-0,Independent Study,Active,1,,,0.99
+MORS-531-0,Organizational Behavior: Social Movements,Active,1,,,1
+MORS-935-C,Personal Leadership Insights (Open to 2nd years and 1Ys),Active,1,,,0.5
+MORS-935-C,Personal Leadership Insights (Open to 1st years only),Active,1,,,0.5
+MORS-937-C,Leader as Coach: Practicum,Active,1,,,0.5
+MORS-941-0,Comprehensive Perspectives of Leading a Sports Entity,Active,1,,,1
+MORS-945-0,Social Dynamics and Network Analytics,Active,1,,,1
+MORS-952-A,"Entrepreneurship: Building Innovation, Teams, and Cultures",Active,1,,,0.5
+MORS-952-B,"Entrepreneurship: Building Innovation, Teams, and Cultures",Active,1,,,0.5
+OPNS-430-0,Operations Management,Active,1,,,1
+OPNS-450-0,Analytical Decision Modeling,Active,1,,,1
+OPNS-454-0,Operations Strategy,Active,1,,,1
+OPNS-455-0,Supply Chain Management,Active,1,,,1
+OPNS-499-0,Independent Study,Active,1,,,0.99
+OPNS-516-0,Stochastic Foundations,Active,1,,,0.99
+OPNS-525-0,Emerging Areas in Operations Management,Active,1,,,1
+OPNS-923-0,Enterprise Risk Management,Active,1,,,1
+OPNS-925-0,The New General Manager (Open to 2nd years and 1Ys),Active,1,,,1
+OPNS-932-0,Implementing Process Improvement,Active,1,,,1
+REAL-499-0,Independent Study,Active,1,,,0.99
+REAL-922-B,International Real Estate,Active,1,,,0.5
